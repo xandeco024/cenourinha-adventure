@@ -1,0 +1,75 @@
+{
+	"name": "CenouraDourada",
+	"plugin-id": "Sprite",
+	"sid": 685824697674951,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2259614,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.125,
+								0.875,
+								0.125,
+								0.875,
+								0.875,
+								0.125,
+								0.875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4617235,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.125,
+								0.875,
+								0.125,
+								0.875,
+								0.875,
+								0.125,
+								0.875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 131994495557246,
+				"name": "Animação 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 1
+			}
+		],
+		"subfolders": []
+	}
+}

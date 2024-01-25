@@ -1,0 +1,64 @@
+{
+	"name": "Cenoura",
+	"plugin-id": "Sprite",
+	"sid": 813027555850667,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Projétil",
+			"sid": 744023258994609
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1303577,
+						"collisionPoly": {
+							"points": [
+								0.0625,
+								0.3125,
+								0.5625,
+								0.3125,
+								1,
+								0.4375,
+								1,
+								0.5625,
+								0.5625,
+								0.6875,
+								0.0625,
+								0.6875,
+								0,
+								0.625,
+								0,
+								0.375
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 160867802387133,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

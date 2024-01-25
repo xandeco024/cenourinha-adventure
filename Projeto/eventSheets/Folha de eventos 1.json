@@ -1,0 +1,480 @@
+{
+	"name": "Folha de eventos 1",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Movimentação e Animação",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-moved",
+							"objectClass": "Cenourinha",
+							"sid": 603971476034302,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cenourinha",
+							"sid": 511961180378323,
+							"parameters": {
+								"animation": "\"Andando\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 277230258267143
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "Cenourinha",
+							"sid": 654265599735011,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cenourinha",
+							"sid": 882715991769806,
+							"parameters": {
+								"animation": "\"Pulando\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 633923117146388,
+							"parameters": {
+								"audio-file": "CenourinhaPulo",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-double-jump",
+							"objectClass": "Cenourinha",
+							"sid": 591342278733286,
+							"behaviorType": "Plataforma",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 537931115035788
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "Cenourinha",
+							"sid": 134452640534374,
+							"behaviorType": "Plataforma"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cenourinha",
+							"sid": 122854331277369,
+							"parameters": {
+								"animation": "\"Andando\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Áudio",
+							"sid": 823556601644515,
+							"parameters": {
+								"audio-file": "CenourinhaAterrissar",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 220196726378241
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Cenourinha",
+							"sid": 343141823025487,
+							"behaviorType": "Plataforma",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cenourinha",
+							"sid": 509402478181279,
+							"parameters": {
+								"animation": "\"Parado\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 653822474307376
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 845556724112336,
+							"parameters": {
+								"key": 37
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Cenourinha",
+							"sid": 945520224542015,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 369277844797484
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Teclado",
+							"sid": 953260386086346,
+							"parameters": {
+								"key": 39
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "Cenourinha",
+							"sid": 753841201217009,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 505373351033700
+				}
+			],
+			"sid": 931680478772616
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 238895468492197,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 695729223907441,
+					"parameters": {
+						"audio-file": "CenourinhaTiro",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 861206658224437,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "Cenourinha",
+							"sid": 755149751537573
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Cenourinha",
+							"sid": 670114944875033,
+							"parameters": {
+								"object": "Cenoura",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Cenoura",
+							"sid": 120963895832468,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"speed": "-600"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 174767373980897,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Cenoura",
+							"sid": 374652441040091
+						}
+					],
+					"sid": 742606561905008
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "Cenourinha",
+							"sid": 283303976046136,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "Cenourinha",
+							"sid": 249045111114361,
+							"parameters": {
+								"object": "Cenoura",
+								"layer": "0",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-speed",
+							"objectClass": "Cenoura",
+							"sid": 450351939806944,
+							"behaviorType": "Projétil",
+							"parameters": {
+								"speed": "600"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 887107073955191,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Cenoura",
+							"sid": 876586270112452
+						}
+					],
+					"sid": 332964120375852
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cenoura",
+					"sid": 768862710313532,
+					"parameters": {
+						"object": "Mosaico"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Inimigo",
+					"sid": 322833020131986
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Cenoura",
+					"sid": 870035938738430
+				}
+			],
+			"sid": 871586909893592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cenourinha",
+					"sid": 203773065019857,
+					"parameters": {
+						"object": "TrocaFase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 113237962506050,
+					"parameters": {
+						"layout": "TrocaFase.Fase"
+					}
+				}
+			],
+			"sid": 443438411159100
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cenourinha",
+					"sid": 898627554049284,
+					"parameters": {
+						"object": "EspinhosChao"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cenourinha",
+					"sid": 316098877222574,
+					"parameters": {
+						"object": "ZonaDeMorte"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 576111968430997,
+					"parameters": {
+						"audio-file": "CenourinhaDano",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 160957762888691
+				}
+			],
+			"sid": 107240240623104,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cenourinha",
+					"sid": 365867350061663,
+					"parameters": {
+						"object": "CenouraDourada"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "CenouraDourada",
+					"sid": 600519011620611
+				},
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 791403080629244,
+					"parameters": {
+						"audio-file": "PegarCenouraDourada",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 450288617859676
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 530295065750149
+				}
+			],
+			"actions": [],
+			"sid": 217027811954913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Cenourinha",
+					"sid": 283510206273723,
+					"parameters": {
+						"object": "PuloExtra"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PuloExtra",
+					"sid": 240570697225862
+				},
+				{
+					"id": "set-double-jump",
+					"objectClass": "Cenourinha",
+					"sid": 759432473743489,
+					"behaviorType": "Plataforma",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 830124880585491
+		}
+	],
+	"sid": 376433741424920
+}

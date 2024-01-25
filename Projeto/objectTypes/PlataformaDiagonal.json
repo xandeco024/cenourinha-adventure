@@ -1,0 +1,74 @@
+{
+	"name": "PlataformaDiagonal",
+	"plugin-id": "Sprite",
+	"sid": 782150444438162,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Senóide",
+			"sid": 770677913674729
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Senóide2",
+			"sid": 588838759882311
+		},
+		{
+			"behaviorId": "jumpthru",
+			"name": "PularAtravés",
+			"sid": 384773230767928
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 587786,
+						"collisionPoly": {
+							"points": [
+								0.020833333333333332,
+								0,
+								0.9791666666666666,
+								0,
+								1,
+								0.0625,
+								0.9895833333333334,
+								0.96875,
+								0.875,
+								1,
+								0.125,
+								1,
+								0.010416666666666666,
+								0.96875,
+								0,
+								0.0625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 344559436689091,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

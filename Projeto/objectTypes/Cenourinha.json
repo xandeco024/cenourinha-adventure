@@ -1,0 +1,349 @@
+{
+	"name": "Cenourinha",
+	"plugin-id": "Sprite",
+	"sid": 463790537663997,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "PuloExtra",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 238883645005613
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Plataforma",
+			"sid": 839963320003876
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9819306,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3210858,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 939382776898297,
+				"name": "Parado",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 2
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8515464,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9011947,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9601504,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5234830,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8197567,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6961131,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.3125,
+								0.75,
+								0.3125,
+								0.75,
+								1,
+								0.21875,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 405482090485236,
+				"name": "Andando",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 7
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4906699,
+						"collisionPoly": {
+							"points": [
+								0.21875,
+								0.1875,
+								0.75,
+								0.1875,
+								0.75,
+								0.875,
+								0.21875,
+								0.875
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Ponto de Imagem 1",
+								"x": 0.96875,
+								"y": 0.5625
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 504017607680941,
+				"name": "Pulando",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
